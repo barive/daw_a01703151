@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<title>Lab 1</title>
@@ -29,39 +29,39 @@
 	<section><a id="about"></a>
 		<h3>About me</h3>
 		<p>Me gustan mucho las películas y series (especialmente si son de animación), jugar videojuegos, leer, aprender idiomas, cocinar pasta, escuchar música y ver la NFL; amo los mariscos y la comida mexicana e italiana. Mi película favorita es Volver al Futuro, mi libro favorito es La Catedral del Mar y le voy a los Dallas Cowboys. Algún día quiero viajar a Italia y a Nueva York :) También quiero aprobar esta clase.</p>
-		<img src="pic1.jpeg" alt="Mi foto" style="width: 300px; height: 200px;">
+		<img src="images/pic1.jpeg" alt="Mi foto" style="width: 300px; height: 200px;">
 	</section>
 
 	<section><a id="preguntas"></a>
 		<h3>Preguntas</h3>
 		<ul>
 			<li>¿Cuál es la diferencia entre Internet y la World Wide Web?<br>
-			El internet es una "red de redes", es descentralizado y conecta millones de computadoras en todo el mundo. La WWW es un modelo de distribución de información que utiliza el protocolo http y que puede accederse por medio de internet. [1]</li><br>
+			El internet es una "red de redes", es descentralizado y conecta millones de computadoras en todo el mundo. La WWW es un modelo de distribución de información que utiliza el protocolo http y que puede accederse por medio de internet. [1]</li>
 			<li>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?<br>
-			GET: Recuperar cualquier información en forma de entidad; recupera un recurso.<br> HEAD: Recupera líneas y headers pero no el body.<br> POST: Enviar información al servidor; crea un recurso.<br> PUT: Actualiza un recurso existente, no lo crea si no existe.<br> PATCH: Realizar la actualización parcial de un recurso, a diferencia de PUT no suprime las propiedades de recurso local que no están incluidas en la petición.<br> DELETE: Suprime un recurso. [2] [3]</li><br>
+			GET: Recuperar cualquier información en forma de entidad; recupera un recurso.<br> HEAD: Recupera líneas y headers pero no el body.<br> POST: Enviar información al servidor; crea un recurso.<br> PUT: Actualiza un recurso existente, no lo crea si no existe.<br> PATCH: Realizar la actualización parcial de un recurso, a diferencia de PUT no suprime las propiedades de recurso local que no están incluidas en la petición.<br> DELETE: Suprime un recurso. [2] [3]</li>
 			<li>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?<br>
-			POST. Porque se está enviando información y es más seguro.</li><br>
+			POST. Porque se está enviando información y es más seguro.</li>
 			<li>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?<br>
-			GET.</li><br>
+			GET.</li>
 			<li>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?<br>
-			La solicitud ha tenido éxito. El significado de un éxito varía dependiendo del método HTTP. [4]</li><br>
+			La solicitud ha tenido éxito. El significado de un éxito varía dependiendo del método HTTP. [4]</li>
 			<li>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?<br>
-			Error 404: Cuando un servidor web recibe una solicitud de una URL que no puede localizar, devuelve un código de estado HTTP de error 404 Not Found. Este código de error significa que el navegador fue capaz de resolver el número de IP asignado a un dominio y encontrar el servidor correctamente, pero que éste no fue capaz de encontrar el fichero solicitado. [5] A veces sí es responsabilidad del desarrollador corregir el error ya que se trata de un defecto en la página o se eliminó algo incorrectamente. Sin embargo también puede tratarse de un error del usuario si ingresó mal la URL.</li><br>
+			Error 404: Cuando un servidor web recibe una solicitud de una URL que no puede localizar, devuelve un código de estado HTTP de error 404 Not Found. Este código de error significa que el navegador fue capaz de resolver el número de IP asignado a un dominio y encontrar el servidor correctamente, pero que éste no fue capaz de encontrar el fichero solicitado. [5] A veces sí es responsabilidad del desarrollador corregir el error ya que se trata de un defecto en la página o se eliminó algo incorrectamente. Sin embargo también puede tratarse de un error del usuario si ingresó mal la URL.</li>
 			<li>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?<br>
-			Error 500: Significa que algo está mal en el servidor del sitio, pero el servidor no pudo especificar cuál es el problema exacto. [6] Sí es responsabilidad del desarrollador porque significa que hay problemas con el código o con los permisos de acceso.</li><br>
+			Error 500: Significa que algo está mal en el servidor del sitio, pero el servidor no pudo especificar cuál es el problema exacto. [6] Sí es responsabilidad del desarrollador porque significa que hay problemas con el código o con los permisos de acceso.</li>
 			<li>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.<br>
-			Significa que su uso ya no es recomendado porque el estándar ha sido actualizado. [7] Algunos elementos desaprobados son: <code> &ltbr/&gt &ltdiv&gt &ltb&gt</code></li><br>
+			Significa que su uso ya no es recomendado porque el estándar ha sido actualizado. [7] Algunos elementos desaprobados son: <code> &lt;br/&gt; &lt;div&gt; &lt;b&gt;</code></li>
 			<li>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?<br>
-			Codificación de caracteres como el DOCTYPE; HTML5 define de forma más estricta los contenidos; nuevos elementos: article, aside, dialog; se cambiaron y eliminaron elementos; nuevos atributos<; cambios en sintaxis. [8]</li><br>
+			Codificación de caracteres como el DOCTYPE; HTML5 define de forma más estricta los contenidos; nuevos elementos: article, aside, dialog; se cambiaron y eliminaron elementos; nuevos atributos; cambios en sintaxis. [8]</li>
 			<li>¿Qué componentes de estructura y estilo tiene una tabla?<br>
-			Estructura: <code>&lttr&gt</code> define cada fila. <code>&ltth&gt</code> es un encabezado de la tabla. <code>&ltth&gt</code> es un casillero (columna). Estilo: anchura, alineación del texto, bordes, relleno, fondo.</li><br>
+			Estructura: <code>&lt;tr&gt;</code> define cada fila. <code>&lt;th&gt;</code> es un encabezado de la tabla. <code>&lt;th&gt;</code> es un casillero (columna). Estilo: anchura, alineación del texto, bordes, relleno, fondo.</li>
 			<li>¿Cuáles son los principales controles de una forma HTML5?<br>
-			<code>&ltlabel&gt &ltinput&gt &ltbutton&gt [9]</code></li><br>
+			<code>&lt;label&gt; &lt;input&gt; &lt;button&gt; [9]</code></li>
 			<li>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)<br>
-			Obtuvo 504 de 555 puntos posibles. Navegador: Chrome Dev 71.0.3578.98 en Windows 10.</li><br>
-			<strong>Sobre el ciclo de vida y desarrollo de los sistemas de información:</strong>
+			Obtuvo 504 de 555 puntos posibles. Navegador: Chrome Dev 71.0.3578.98 en Windows 10.</li>
+			<li>Sobre el ciclo de vida y desarrollo de los sistemas de información:</li>
 			<li>¿Cuál es el ciclo de vida de los sistemas de información?<br>
-			Planificación, análisis, diseño, implementación, pruebas, instalación, uso/mantenimiento. [10]</li><br>
+			Planificación, análisis, diseño, implementación, pruebas, instalación, uso/mantenimiento. [10]</li>
 			<li>¿Cuál es el ciclo de desarrollo de sistemas de información?<br>
 			Planificación, análisis, diseño, implementación, pruebas, instalación, uso/mantenimiento.</li>
 		</ul>
