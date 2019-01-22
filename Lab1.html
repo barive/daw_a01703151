@@ -11,15 +11,28 @@
 		<h3 align="center">Correo: A01703151@itesm.mx</h3>
 	</header>
 	<nav>
-		<a href=""></a>
+		<a href="#about">About me</a> |
+		<a href="#preguntas">Preguntas</a> |
+		<a href="#conceptos">Conceptos</a> |
+		<a href="#referencias">Referencias</a>
 	</nav>
 
 	<section>
-		<h3>About me</h3>
-		<p>Me gustan mucho las películas y series animadas, jugar videojuegos, leer, aprender idiomas, escuchar música y ver la NFL; amo los mariscos. Mi película favorita es Volver al Futuro y le voy a los Dallas Cowboys. Algún día quiero viajar a Italia y a Nueva York :)</p>
+		<form><br>
+			<label>Nombre:</label><br>
+			<input type="text" name="nombre"><br>
+			<label>Apellido:</label><br>
+			<input type="text" name="apellido">
+		</form>
 	</section>
 
-	<section>
+	<section><a name="about" id="about"></a>
+		<h3>About me</h3>
+		<p>Me gustan mucho las películas y series (especialmente si son de animación), jugar videojuegos, leer, aprender idiomas, cocinar pasta, escuchar música y ver la NFL; amo los mariscos y la comida mexicana e italiana. Mi película favorita es Volver al Futuro, mi libro favorito es La Catedral del Mar y le voy a los Dallas Cowboys. Algún día quiero viajar a Italia y a Nueva York :) También quiero aprobar esta clase.</p>
+		<img src="pic1.jpeg" alt="La de la derecha" style="width: 300px; height: 200px;">
+	</section>
+
+	<section><a name="preguntas" id="preguntas"></a>
 		<h3>Preguntas</h3>
 		<ul>
 			<li>¿Cuál es la diferencia entre Internet y la World Wide Web?</li>
@@ -41,7 +54,7 @@
 			<li>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</li>
 			<p>Codificación de caracteres como el DOCTYPE; HTML5 define de forma más estricta los contenidos; nuevos elementos: article, aside, dialog; se cambiaron y eliminaron elementos; nuevos atributos<; cambios en sintaxis. [8]</p>
 			<li>¿Qué componentes de estructura y estilo tiene una tabla?</li>
-			<p>Estructura: <code>&lttr&gt</code>define cada fila. <code>&ltth&gt</code>es un encabezado de la tabla. <code>&ltth&gt</code>es un casillero (columna). Estilo: anchura, alineación del texto, bordes, relleno, fondo.</p>
+			<p>Estructura: <code>&lttr&gt</code> define cada fila. <code>&ltth&gt</code> es un encabezado de la tabla. <code>&ltth&gt</code> es un casillero (columna). Estilo: anchura, alineación del texto, bordes, relleno, fondo.</p>
 			<li>¿Cuáles son los principales controles de una forma HTML5?</li>
 			<p><code>&ltlabel&gt &ltinput&gt &ltbutton&gt [9]</code></p>
 			<li>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</li>
@@ -55,37 +68,44 @@
 
 	</section>
 
-	<section>
+	<section><a name="conceptos" id="conceptos"></a>
 		<h3>Conceptos</h3>
 		<p>URL: Uniform Resource Locator. Es una dirección única de las páginas de internet. Se compone por el identificador de protocolo (ej. http) y por el nombre del recurso (ejemplo.com), o sea, la dirección del recurso. [11] </p>
 		<p>MIME: Multipurpose Internet Mail Extensions. Es una forma estandarizada de indicar el formato de un documento. Los navegadores utilizan el MIME para determinar cómo se procesará el documento. Ejemplos: text, image, audio, video, application. [12]</p>
 		<strong>Métodos y códigos de errores</strong>
 		<ul>
-			<li>HTTP</li>
-			<li>XML</li>
-			<li>XHTML</li>
-			<li>HTML5</li>
-			<li>JS</li>
-			<li>php</li>
-			<li>jsp</li>
-			<li>Ajax</li>
+			<li>HTTP: Hypertext Transfer Protocol. Es un protocolo cliente-servidor y es la base del intercambio de datos en la web. [13]</li>
+			<li>XML: Extensible Markup Language. Permite definir lenguajes de marcado que permiten definir etiquetas personalizadas para la organización de datos. [14]</li>
+			<li>XHTML: Extensible Hypertext Markup Language. Fue desarrollado por el W3C para ayudar a los desarrolladores web a hacer la transición de HTML en XML. Es muy parecido al HTML 4.01. XHTML combina fuerza de HTML y XML. [15]</li>
+			<li>HTML5: Es la más reciente versión de HTML.</li>
+			<li>JS: Javascript. Es un lenguaje ligero e interpretado, orientado a objetos con  funciones de primera clase, más conocido como el lenguaje de script para páginas web, pero también usado en muchos entornos sin navegador, tales como   node.js, Apache CouchDB y Adobe Acrobat. [16]</li>
+			<li>php: Hypertext Preprocessor. Lenguaje utilizado para el desarrollo web. Puede ser incrustado en HTML. [17]</li>
+			<li>jsp: Java Server Pages. Tecnología utilizada para crear páginas web dinámicas con Java; emplea código en HTML y XML. [18]</li>
+			<li>Ajax: Asynchronous Javascript and and XML. Es una técnica para el desarrollo de sitios web que implementan aplicaciones interactivas. Permite que una página web que ya ha sido cargada solicite nueva información al servidor. [19]</li>
 		</ul>
 	</section>
 
-	<section>
+	<section><a name="referencias" id="referencias"></a>
 		<h3>Referencias</h3>
-		<p>[1] https://www.webopedia.com/DidYouKnow/Internet/Web_vs_Internet.asp <br>
-			[2] https://michelletorres.mx/peticiones-http-get-post-put-delete-etc/ <br>
-			[3] https://www.ibm.com/support/knowledgecenter/es/SSQP76_8.9.0/com.ibm.odm.dserver.rules.res.managing/topics/con_res_restapi_rsrcmng_methods.html <br>
-			[4] https://developer.mozilla.org/es/docs/Web/HTTP/Status <br>
-			[5] https://www.humanlevel.com/diccionario-marketing-online/codigo-de-error-404-not-found <br>
-			[6] https://www.lifewire.com/500-internal-server-error-explained-2622938 <br>
-			[7] https://sites.google.com/site/dwebhtml/reference/deprecated <br>
-			[8] http://www.anieto2k.com/2007/06/16/las-principales-diferencias-entre-html5-y-html4/ <br>
-			[9] https://www.w3schools.com/html/html_forms.asp <br>
-			[10] https://elvex.ugr.es/idbis/db/docs/lifecycle.pdf <br>
-			[11] https://docs.oracle.com/javase/tutorial/networking/urls/definition.html <br>
-			[12] https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+		<p>[1] <a href="https://www.webopedia.com/DidYouKnow/Internet/Web_vs_Internet.asp" target="_blank">https://www.webopedia.com/DidYouKnow/Internet/Web_vs_Internet.asp</a><br>
+			[2] <a href="https://michelletorres.mx/peticiones-http-get-post-put-delete-etc/">https://michelletorres.mx/peticiones-http-get-post-put-delete-etc/</a><br>
+			[3] <a href="https://www.ibm.com/support/knowledgecenter/es/SSQP76_8.9.0/com.ibm.odm.dserver.rules.res.managing/topics/con_res_restapi_rsrcmng_methods.html">https://www.ibm.com/support/knowledgecenter/es/SSQP76_8.9.0/com.ibm.odm.dserver.rules.res.managing/topics/con_res_restapi_rsrcmng_methods.html</a><br>
+			[4] <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Status">https://developer.mozilla.org/es/docs/Web/HTTP/Status</a><br>
+			[5] <a href="https://www.humanlevel.com/diccionario-marketing-online/codigo-de-error-404-not-found">https://www.humanlevel.com/diccionario-marketing-online/codigo-de-error-404-not-found</a><br>
+			[6] <a href="https://www.lifewire.com/500-internal-server-error-explained-2622938">https://www.lifewire.com/500-internal-server-error-explained-2622938</a><br>
+			[7] <a href="https://sites.google.com/site/dwebhtml/reference/deprecated">https://sites.google.com/site/dwebhtml/reference/deprecated</a><br>
+			[8] <a href="http://www.anieto2k.com/2007/06/16/las-principales-diferencias-entre-html5-y-html4/">http://www.anieto2k.com/2007/06/16/las-principales-diferencias-entre-html5-y-html4/</a><br>
+			[9] <a href="https://www.w3schools.com/html/html_forms.asp">https://www.w3schools.com/html/html_forms.asp</a><br>
+			[10] <a href="https://elvex.ugr.es/idbis/db/docs/lifecycle.pdf">https://elvex.ugr.es/idbis/db/docs/lifecycle.pdf</a><br>
+			[11] <a href="https://docs.oracle.com/javase/tutorial/networking/urls/definition.html">https://docs.oracle.com/javase/tutorial/networking/urls/definition.html</a><br>
+			[12] <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP/MIME_types">https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP/MIME_types</a><br>
+			[13] <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Overview">https://developer.mozilla.org/es/docs/Web/HTTP/Overview</a><br>
+			[14] <a href="http://www.mundolinux.info/que-es-xml.htm">http://www.mundolinux.info/que-es-xml.htm</a><br>
+			[15] <a href="https://www.tutorialspoint.com/es/xhtml/what_is_xhtml.htm">https://www.tutorialspoint.com/es/xhtml/what_is_xhtml.htm</a><br>
+			[16] <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">https://developer.mozilla.org/es/docs/Web/JavaScript</a><br>
+			[17] <a href="http://php.net/manual/es/intro-whatis.php">http://php.net/manual/es/intro-whatis.php</a><br>
+			[18] <a href="https://desarrolloweb.com/articulos/831.php">https://desarrolloweb.com/articulos/831.php</a><br>
+			[19] <a href="https://www.digitallearning.es/blog/que-es-ajax/">https://www.digitallearning.es/blog/que-es-ajax/</a>
 		</p>
 	</section>
 
