@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylemin.css">
+	<title>Lab 3</title>
+</head>
+<body>
+	<header>
+		<h1>Brenda Angélica Rivera Luis</h1>
+		<h2>A01703151</h2>
+		<h3>Correo: A01703151@itesm.mx</h3>
+	</header>
+	<nav id="nav">
+		<a href="#about">About me</a> |
+		<a href="#preguntas">Preguntas</a> |
+		<a href="#conceptos">Conceptos</a> |
+		<a href="#referencias">Referencias</a>
+	</nav>
+
+	<section id="form">
+		<form><br>
+			<label>Nombre:</label><br>
+			<input type="text" name="nombre"><br>
+			<label>Apellido:</label><br>
+			<input type="text" name="apellido">
+		</form>
+	</section>
+
+	<section id="about" class="sec">
+		<h3>About me</h3>
+		<p>Me gustan mucho las películas y series (especialmente si son de animación), jugar videojuegos, leer, aprender idiomas, cocinar pasta, escuchar música y ver la NFL; amo los mariscos y la comida mexicana e italiana. Mi película favorita es Volver al Futuro, mi libro favorito es La Catedral del Mar y le voy a los Dallas Cowboys. Algún día quiero viajar a Italia y a Nueva York :) También quiero aprobar esta clase.</p>
+		<img src="images/pic1.jpeg" alt="Mi foto con mis amigas" class="center">
+	</section>
+
+	<section id="preguntas" class="sec">
+		<h3>Preguntas</h3>
+		<ul>
+			<li>¿Cuál es la diferencia entre Internet y la World Wide Web?<br>
+			El internet es una "red de redes", es descentralizado y conecta millones de computadoras en todo el mundo. La WWW es un modelo de distribución de información que utiliza el protocolo http y que puede accederse por medio de internet. [1]</li>
+			<li>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?<br>
+				<ul>
+					<li>GET: Recuperar cualquier información en forma de entidad; recupera un recurso.</li>
+					<li>HEAD: Recupera líneas y headers pero no el body.</li>
+					<li>POST: Enviar información al servidor; crea un recurso.</li>
+					<li>PUT: Actualiza un recurso existente, no lo crea si no existe.</li>
+					<li>PATCH: Realizar la actualización parcial de un recurso, a diferencia de PUT no suprime las propiedades de recurso local que no están incluidas en la petición.</li>
+					<li>DELETE: Suprime un recurso. [2] [3]</li>
+				</ul>
+			</li>
+			<li>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?<br>
+			POST. Porque se está enviando información y es más seguro.</li>
+			<li>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?<br>
+			GET.</li>
+			<li>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?<br>
+			La solicitud ha tenido éxito. El significado de un éxito varía dependiendo del método HTTP. [4]</li>
+			<li>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?<br>
+			Error 404: Cuando un servidor web recibe una solicitud de una URL que no puede localizar, devuelve un código de estado HTTP de error 404 Not Found. Este código de error significa que el navegador fue capaz de resolver el número de IP asignado a un dominio y encontrar el servidor correctamente, pero que éste no fue capaz de encontrar el fichero solicitado. [5] A veces sí es responsabilidad del desarrollador corregir el error ya que se trata de un defecto en la página o se eliminó algo incorrectamente. Sin embargo también puede tratarse de un error del usuario si ingresó mal la URL.</li>
+			<li>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?<br>
+			Error 500: Significa que algo está mal en el servidor del sitio, pero el servidor no pudo especificar cuál es el problema exacto. [6] Sí es responsabilidad del desarrollador porque significa que hay problemas con el código o con los permisos de acceso.</li>
+			<li>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.<br>
+			Significa que su uso ya no es recomendado porque el estándar ha sido actualizado. [7] Algunos elementos desaprobados son: <code> &lt;br/&gt; &lt;div&gt; &lt;b&gt;</code></li>
+			<li>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?<br>
+			Codificación de caracteres como el DOCTYPE; HTML5 define de forma más estricta los contenidos; nuevos elementos: article, aside, dialog; se cambiaron y eliminaron elementos; nuevos atributos; cambios en sintaxis. [8]</li>
+			<li>¿Qué componentes de estructura y estilo tiene una tabla?<br>
+			Estructura: <code>&lt;tr&gt;</code> define cada fila. <code>&lt;th&gt;</code> es un encabezado de la tabla. <code>&lt;th&gt;</code> es un casillero (columna). Estilo: anchura, alineación del texto, bordes, relleno, fondo.</li>
+			<li>¿Cuáles son los principales controles de una forma HTML5?<br>
+			<code>&lt;label&gt; &lt;input&gt; &lt;button&gt;</code> [9]</li>
+			<li>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)<br>
+			Obtuvo 504 de 555 puntos posibles. Navegador: Chrome Dev 71.0.3578.98 en Windows 10.</li>
+			<li>Sobre el ciclo de vida y desarrollo de los sistemas de información:</li>
+			<li>¿Cuál es el ciclo de vida de los sistemas de información?<br>
+				<ul>
+					<li>Planeación</li>
+					<li>Desarrollo</li>
+					<li>Operación</li>
+					<li>Mantenimiento [10]</li>
+				</ul>
+			</li>
+			<li>¿Cuál es el ciclo de desarrollo de sistemas de información?<br>
+				<ul>
+					<li>Análisis</li>
+					<li>Diseño</li>
+					<li>Construcción</li>
+					<li>Pruebas</li>
+					<li>Instalación [10]</li>
+				</ul>
+			</li>
+		</ul>
+
+	</section>
+
+	<section id="conceptos" class="sec">
+		<h3>Conceptos</h3>
+		<p>URL: Uniform Resource Locator. Es una dirección única de las páginas de internet. Se compone por el identificador de protocolo (ej. http) y por el nombre del recurso (ejemplo.com), o sea, la dirección del recurso. [11] </p>
+		<p>MIME: Multipurpose Internet Mail Extensions. Es una forma estandarizada de indicar el formato de un documento. Los navegadores utilizan el MIME para determinar cómo se procesará el documento. Ejemplos: text, image, audio, video, application. [12]</p>
+		<strong>Métodos y códigos de errores</strong>
+		<ul>
+			<li>HTTP: Hypertext Transfer Protocol. Es un protocolo cliente-servidor y es la base del intercambio de datos en la web. [13]</li>
+			<li>XML: Extensible Markup Language. Permite definir lenguajes de marcado que permiten definir etiquetas personalizadas para la organización de datos. [14]</li>
+			<li>XHTML: Extensible Hypertext Markup Language. Fue desarrollado por el W3C para ayudar a los desarrolladores web a hacer la transición de HTML en XML. Es muy parecido al HTML 4.01. XHTML combina fuerza de HTML y XML. [15]</li>
+			<li>HTML5: Es la más reciente versión de HTML.</li>
+			<li>JS: Javascript. Es un lenguaje ligero e interpretado, orientado a objetos con  funciones de primera clase, más conocido como el lenguaje de script para páginas web, pero también usado en muchos entornos sin navegador, tales como node.js, Apache CouchDB y Adobe Acrobat. [16]</li>
+			<li>php: Hypertext Preprocessor. Lenguaje utilizado para el desarrollo web. Puede ser incrustado en HTML. [17]</li>
+			<li>jsp: Java Server Pages. Tecnología utilizada para crear páginas web dinámicas con Java; emplea código en HTML y XML. [18]</li>
+			<li>Ajax: Asynchronous Javascript and and XML. Es una técnica para el desarrollo de sitios web que implementan aplicaciones interactivas. Permite que una página web que ya ha sido cargada solicite nueva información al servidor. [19]</li>
+		</ul>
+	</section>
+
+	<section id="preguntascss" class="sec">
+		<h3>Preguntas CSS</h3>
+		<ul>
+			<li>Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? <br>
+			Evitar su uso y buscar soluciones alternas, especialmente porque hace que el mantenimiento del código sea más difícil. Solamente usarlo en casos muy necesarios y extremos, como cuando un javascript altera el diseño de una sección o cuando algún botón se vea afectado por estar en una sección con otra configuración a la deseada.</li>
+			<li>Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?<br>
+			Porque lo más importante es el contenido de la página, por eso es que el fondo no debe hacer que las letras sean ilegibles o ser muy distractor. Además debe de ser apropiado para el tipo de página y su contexto.</li>
+			<li>Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?<br>
+			Es mejor usar % porque es una unidad relativa, o sea, escalable; mientras que px y pt son unidades fijas. Sólo usaría px y pt cuando quisiera que el tamaño de los elemento fuera el mismo siempre en cualquier parte.</li>
+			<li>¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?<br>
+			Porque menos datos deben ser descargados por el usuario y también la red transmite menos información. [20]</li>
+		</ul>
+	</section>
+
+	<section id="referencias" class="sec">
+		<h3>Referencias</h3>
+		<p>[1] <a href="https://www.webopedia.com/DidYouKnow/Internet/Web_vs_Internet.asp" target="_blank">https://www.webopedia.com/DidYouKnow/Internet/Web_vs_Internet.asp</a><br>
+			[2] <a href="https://michelletorres.mx/peticiones-http-get-post-put-delete-etc/">https://michelletorres.mx/peticiones-http-get-post-put-delete-etc/</a><br>
+			[3] <a href="https://www.ibm.com/support/knowledgecenter/es/SSQP76_8.9.0/com.ibm.odm.dserver.rules.res.managing/topics/con_res_restapi_rsrcmng_methods.html">https://www.ibm.com/support/knowledgecenter/es/SSQP76_8.9.0/com.ibm.odm.dserver.rules.res.managing/topics/con_res_restapi_rsrcmng_methods.html</a><br>
+			[4] <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Status">https://developer.mozilla.org/es/docs/Web/HTTP/Status</a><br>
+			[5] <a href="https://www.humanlevel.com/diccionario-marketing-online/codigo-de-error-404-not-found">https://www.humanlevel.com/diccionario-marketing-online/codigo-de-error-404-not-found</a><br>
+			[6] <a href="https://www.lifewire.com/500-internal-server-error-explained-2622938">https://www.lifewire.com/500-internal-server-error-explained-2622938</a><br>
+			[7] <a href="https://sites.google.com/site/dwebhtml/reference/deprecated">https://sites.google.com/site/dwebhtml/reference/deprecated</a><br>
+			[8] <a href="http://www.anieto2k.com/2007/06/16/las-principales-diferencias-entre-html5-y-html4/">http://www.anieto2k.com/2007/06/16/las-principales-diferencias-entre-html5-y-html4/</a><br>
+			[9] <a href="https://www.w3schools.com/html/html_forms.asp">https://www.w3schools.com/html/html_forms.asp</a><br>
+			[10] Presentación: Ciclo de vida de los sistemas de información<br>
+			[11] <a href="https://docs.oracle.com/javase/tutorial/networking/urls/definition.html">https://docs.oracle.com/javase/tutorial/networking/urls/definition.html</a><br>
+			[12] <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP/MIME_types">https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP/MIME_types</a><br>
+			[13] <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Overview">https://developer.mozilla.org/es/docs/Web/HTTP/Overview</a><br>
+			[14] <a href="http://www.mundolinux.info/que-es-xml.htm">http://www.mundolinux.info/que-es-xml.htm</a><br>
+			[15] <a href="https://www.tutorialspoint.com/es/xhtml/what_is_xhtml.htm">https://www.tutorialspoint.com/es/xhtml/what_is_xhtml.htm</a><br>
+			[16] <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">https://developer.mozilla.org/es/docs/Web/JavaScript</a><br>
+			[17] <a href="http://php.net/manual/es/intro-whatis.php">http://php.net/manual/es/intro-whatis.php</a><br>
+			[18] <a href="https://desarrolloweb.com/articulos/831.php">https://desarrolloweb.com/articulos/831.php</a><br>
+			[19] <a href="https://www.digitallearning.es/blog/que-es-ajax/">https://www.digitallearning.es/blog/que-es-ajax/</a><br>
+			[20] <a href="https://blog.stackpath.com/glossary/minification/">https://blog.stackpath.com/glossary/minification/</a>
+		</p>
+	</section>
+
+	<footer>
+		<p>Editor de html: Sublime Text</p>
+		<p><a href="http://www.sublimetext.com/" target="_blank">Sitio del editor</a></p>
+	</footer>
+
+</body>
+</html>

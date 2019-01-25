@@ -1,0 +1,87 @@
+body
+{
+	font-family: Verdana;
+	text-align: justify;
+	background-color: lightblue;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	line-height: 2;
+	background-image: url("images/blue5.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+h1, h2, h3
+{
+	font-family: Century Gothic;
+	text-align: center;
+}
+
+a:link
+{
+	font-weight: bold; 
+	color: blue;   
+	text-decoration:none;
+}
+
+a:visited
+{ 
+   font-weight: bold; 
+   color: purple;  
+   text-decoration:none; 
+}
+
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sec
+{
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	padding-left: 5vw;
+	padding-right: 10vw; 
+}
+
+#nav
+{
+
+}
+
+#form
+{
+	background-color: #5995DA;
+	align-content: center;
+}
+
+#about
+{
+	background-color: #B2D6FF;
+}
+
+#preguntas
+{
+	background-color: #EAEDF0;
+}
+
+#conceptos
+{
+	background-color: #F5CF8E;
+}
+
+#preguntascss
+{
+	background-color: #F09A9D;
+}
+
+#referencias
+{
+	background-color: #C8C6FA;
+}
