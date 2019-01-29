@@ -8,8 +8,8 @@ body
 	margin-left: 10vw;
 	margin-right: 10vw;
 	line-height: 2;
-	background-image: url("images/blue5.jpg");
-	background-repeat: no-repeat;
+	background-image: url("images/old_moon.png");
+	background-repeat: repeat;
 	background-position: center;
 	background-attachment: fixed;
 }
@@ -23,14 +23,14 @@ h1, h2, h3
 
 a:link
 {
-	font-weight: bold; 
+	font-weight: normal; 
 	color: blue;   
 	text-decoration:none;
 }
 
 a:visited
 { 
-   font-weight: bold; 
+   font-weight: normal; 
    color: purple;  
    text-decoration:none; 
 }
@@ -50,15 +50,15 @@ a:visited
 	padding-right: 10vw; 
 }
 
-#nav
+.footer
 {
-
+	background-color: #5995DA;
 }
+
 
 #form
 {
 	background-color: #5995DA;
-	align-content: center;
 }
 
 #about
