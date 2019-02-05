@@ -1,0 +1,20 @@
+body:after{
+	/*background-color: #FFFFFF;
+	background-image: url(../marcaagua.gif);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-attachment:fixed;*/
+	content: "©";
+	font-size: 15em;  
+  	color: rgba(52, 166, 214, 0.4);
+  	z-index: 9999;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	position: fixed;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+	
+}
