@@ -1,0 +1,24 @@
+sp_help materiales
+¿Que muestra la instrucción?
+El nombre de la tabla, sus atributos y el tipo de dato de estos.
+
+Ejecutar las instrucciones del archivo crear.sql
+¿Qué efecto tuvo esta acción?
+Creó las cuatro tablas otra vez.
+
+¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+Ahorras tiempo y creas todo de una vez
+
+Abrir sesión FTP y subir los archivos csv a mi directorio
+¿Qué relación tienen con las tablas de la base de datos? (checa su contenido)
+Contienen la misma información.
+
+Crear un archivo cuyo nombre sea materiales.sql. BULK INSERT
+¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+También tienen la misma información.
+
+SELECT  * FROM Materiales
+¿Qué sucedió?
+Se desplegó la tabla Materiales
+
+
