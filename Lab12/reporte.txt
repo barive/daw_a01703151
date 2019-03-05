@@ -1,0 +1,95 @@
+Ejercicio 2
+
+Agrega un nuevo registro a la tabla de materiales: 
+  INSERT INTO Materiales values(1000, 'xxx', 1000) 
+
+-Revisa el contenido de la tabla materiales y determina si existe alguna inconsistencia en el contenido de la tabla. ¿Cuál es? ¿A qué se debe?
+Se agregó el número 1000 como una clave, la cadena xxx en el campo de descripción y 1000 en costo. La clave 1000 ya existía
+y xxx no es una descripción.
+
+A continuación definiremos a la Clave como llave primaria de la tabla de materiales, esto mediante la creación de un constraint. 
+  ALTER TABLE Materiales add constraint llaveMateriales PRIMARY KEY (Clave) 
+
+Agrega nuevamente el registro a la tabla de materiales: 
+  INSERT INTO Materiales values(1000, 'xxx', 1000) 
+
+-¿Qué ocurrió?
+No se pudo insertar el registro.
+
+Verifica si la tabla de materiales tiene definido algún constraint (restricción): 
+  sp_helpconstraint materiales 
+
+-¿Qué información muestra esta consulta?
+La infromación de la llave primaria, su constraint_name y constraint_key.
+
+Asegúrate de crear constraints análogos para definir las llaves primarias de las tablas proveedores, y proyectos. 
+
+-¿Qué sentencias utilizaste para definir las llaves primarias? 
+ALTER TABLE Proveedores add constraint llaveProveedores PRIMARY KEY (RFC)
+ALTER TABLE Proyectos add constraint llaveProyectos PRIMARY KEY (Numero)
+
+Define el constraint correspondiente a la llave primaria para la tabla entregan, considerando que en este caso, la llave primaria está integrada por varias columnas.
+
+-¿Qué sentencias utilizaste para definir este constrait? 
+ALTER TABLE Entregan add constraint llaveEntregan PRIMARY KEY (Clave, RFC, Numero, Fecha)
+
+
+Ejercicio 3
+
+Revisa y analiza el contenido de las tablas materiales, proveedores y proyectos, utilizando la sentencia: 
+  SELECT * from nombre de la tabla ; 
+
+Intenta insertar en la tabla entregan el siguiente registro: 
+  INSERT INTO entregan values (0, 'xxx', 0, '1-jan-02', 0) ; 
+
+-¿Qué particularidad observas en los valores para clave, rfc y numero? 
+Los valores no tienen el mismo formato que los demás registros.
+
+-¿Cómo responde el sistema a la inserción de este registro?
+Lo agrega aunque el formato no sea correcto.
+
+Intenta nuevamente la inserción del registro inconsistente.
+
+-¿Qué significa el mensaje que emite el sistema?
+El insert tiene conflicto con la llave foránea que se acaba de crear. Esto es porque la clave no existe en Materiales.
+The INSERT statement conflicted with the FOREIGN KEY constraint "cfentreganclave". The conflict occurred in database "a1703151", table "a1703151.Materiales", column 'Clave'
+ 
+-¿Qué significado tiene la sentencia anterior? 
+Que la clave que se agrega en Entregan tiene que existir en Materiales.
+
+-¿Qué significan las columnas de esas consultas?
+El tipo de constraint (llave primaria o foránea), su nombre, eliminar acción, actualizar acción, estado, estado de replicación y las llaves que conforman los constraints.
+
+
+Ejercicio 4
+
+Efectúa la siguiente sentencia INSERT: 
+  INSERT INTO entregan values (1000, 'AAAA800101', 5000, GETDATE(), 0); 
+Lista el registro que acabas de crear. 
+
+-¿Qué uso se le está dando a GETDATE()?
+Obtiene la fecha actual.
+
+-¿Tiene sentido el valor del campo de cantidad? 
+No, la cantidad es 0 pero no tiene sentido que la cantidad de una entrega sea 0.
+
+Para no permitir una cantidad igual a 0 utilizamos el siguiente constraint: 
+  ALTER TABLE entregan add constraint cantidad check (cantidad > 0) ; 
+Intenta insertar un registro con cantidad igual o menor que 0. 
+
+-¿Cómo responde el sistema? 
+No permite que se agregue el registro.
+The INSERT statement conflicted with the CHECK constraint "cantidad". The conflict occurred in database "a1703151", table "a1703151.Entregan", column 'Cantidad'.
+
+-¿Qué significa el mensaje? 
+Que hay conflictos al momento de intentar insertar el registro.
+
+Integridad referencial
+Es un concepto que en bases de datos significa que una relación entre dos tablas es consistente. Es una limitación en la que los datos y las relaciones entre
+ellos están organizados en tablas de filas y columnas, para que no se introduzcan datos inconsistentes. Se crea a través de una restricción Foreign Key.
+En general, se trata de que una base de datos no puede tener valores de claves externas sin pareja.
+
+Referencias:
+S.A. (2013). Entendiendo la Integridad Referencial. Recuperado de https://firebird21.wordpress.com/2013/10/30/entendiendo-la-integridad-referencial/
+Dunning, D. (s.f.) ¿Qué es la integridad referencial y cómo puede evitar estos problemas un programador?. Recuperado de https://techlandia.com/integridad-referencial-evitar-estos-problemas-programador-info_262424/
+
